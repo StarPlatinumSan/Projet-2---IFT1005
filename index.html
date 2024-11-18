@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculateur d'unités</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<main class="container">
+			<header class="calculateur">
+				<div class="textHeader">
+					<h1 class="title">Calculateur d'unités</h1>
+					<p class="description">
+						Les conversions de longueur sont essentielles dans de nombreux aspects de la vie quotidienne, qu'il s'agisse de mesurer des distances pour des voyages, de planifier des projets de construction, ou même d'effectuer des conversions pour des
+						recettes. Notre outil vous permet de convertir rapidement et précisément entre différentes unités de longueur telles que les mètres, kilomètres, pouces et pieds, vous aidant à adapter vos mesures à différents contextes.
+					</p>
+				</div>
+
+				<div class="formDiv">
+					<h2 class="titleForm">Entrez les valeurs</h2>
+					<form class="form" id="form" name="form" method="post">
+						<div class="allInputs">
+							<div class="inputDiv">
+								<label for="inputValue" class="labelCenter">Valeur</label>
+								<input type="text" id="inputValue" name="inputValue" placeholder="Entrez la valeur" />
+							</div>
+							<div class="inputDiv">
+								<label for="inputUnit" class="labelCenter">Unité de la valeur</label>
+								<select id="inputUnit" name="inputUnit">
+									<option value="m">m</option>
+								</select>
+							</div>
+							<div class="inputDiv">
+								<label for="outputUnit" class="labelCenter">Unité cible</label>
+								<select id="outputUnit" name="outputUnit">
+									<option value="cm">cm</option>
+									<option value="m">m</option>
+									<option value="km">km</option>
+									<option value="pied">pied</option>
+									<option value="pouce">pouce</option>
+								</select>
+							</div>
+							<button class="buttonConvertir">Convertir</button>
+						</div>
+
+						<div class="afficherForm">
+							<p class="afficherText">Entrez les valeurs dans la calculatrice</p>
+						</div>
+					</form>
+				</div>
+			</header>
+			<section class="mainBody">
+				<!-- section comprendre TODO -->
+				<section class="comprendreConversions">
+					<div class="backgroundImg">
+						<img src="assets/imgCalculator.png" alt="conversions" class="imgCalculator" />
+					</div>
+					<div class="comprendreText subTitle">
+						<h2 class="titreComprendre">Comprendre les conversions d'unités</h2>
+						<p class="description">
+							Les conversions d'unités vous aident à comprendre la relation entre différents systèmes de mesure. Que vous convertissiez des longueurs, des poids ou des températures, notre outil simplifie le processus pour une meilleure précision et
+							compréhension au quotidien.
+						</p>
+					</div>
+				</section>
+				<!-- section flex TODO -->
+				<section class="flexSection">
+					<div class="capsule">
+						<div class="imgCapsule">
+							<img src="assets/screwdriver.svg" alt="metrique" width="100" />
+						</div>
+						<h3 class="titleCapsule">Conversions des Mètres en Kilomètres</h3>
+						<p class="description">
+							Les mètres et les kilomètres sont utilisés pour mesurer les distances dans les systèmes métriques. Convertir entre eux est simple : 1 kilomètre équivaut à 1 000 mètres. Cette conversion est utile pour mesurer des distances sur de longues
+							échelles, comme les trajets en voiture ou les itinéraires de randonnée.
+						</p>
+					</div>
+					<div class="capsule">
+						<div class="imgCapsule">
+							<img src="assets/convert.svg" alt="imperial" width="100" />
+						</div>
+						<h3 class="titleCapsule">Conversions des Pieds en Mètres</h3>
+						<p class="description">
+							Les pieds sont souvent utilisés dans les systèmes de mesure impériaux pour les hauteurs et les distances moyennes. Convertir les pieds en mètres peut faciliter la compréhension des mesures dans un contexte international, avec 1 pied équivalant
+							à environ 0,3048 mètre.
+						</p>
+					</div>
+					<div class="capsule">
+						<div class="imgCapsule">
+							<img src="assets/balance.svg" alt="tools" width="100" />
+						</div>
+						<h3 class="titleCapsule">Conversions des Pouces en Centimètres</h3>
+						<p class="description">
+							Les pouces et les centimètres sont couramment utilisés pour mesurer de petites distances ou des dimensions précises. Un pouce équivaut à 2,54 centimètres. Cette conversion est pratique pour ajuster des mesures entre les systèmes impérial et
+							métrique, comme pour les tailles d'écran ou les dimensions de meubles
+						</p>
+					</div>
+				</section>
+				<!-- section grid TODO -->
+				<section class="gridSection">
+					<div class="gridText" id="faits">
+						<h2 class="titleGrid subTitle">Quelques Faits</h2>
+						<p class="description">
+							Bien que convertir des unités de longueur puisse sembler simple, il est important de comprendre le contexte et les applications pratiques. Différentes unités sont utilisées à diverses fins, telles que la construction, les voyages ou les
+							mesures du quotidien. Voici quelques points clés et faits à connaître sur les conversions de longueur
+						</p>
+					</div>
+
+					<div class="gridDiv" id="systeme">
+						<div class="gridAbout">
+							<img src="assets/usa.svg" alt="usa" class="gridImg" />
+							<h4 class="subGridTitle">Système Métrique vs Système Impérial</h4>
+						</div>
+						<p class="description">Le système métrique est couramment utilisé dans le monde entier, tandis que le système impérial (pouces, pieds, miles) est prédominant dans quelques pays.</p>
+					</div>
+
+					<div class="gridDiv" id="application">
+						<div class="gridAbout">
+							<img src="assets/construction.svg" alt="construction" class="gridImg" />
+							<h4 class="subGridTitle">Applications dans le Monde Réel</h4>
+						</div>
+						<p class="description">Les conversions de longueur jouent un rôle vital dans des domaines tels que l'ingénierie, l'architecture, et les tâches quotidiennes comme la mesure de meubles.</p>
+					</div>
+
+					<div class="gridDiv" id="precision">
+						<div class="gridAbout">
+							<img src="assets/house.svg" alt="house" class="gridImg" />
+							<h4 class="subGridTitle">Précision et Outils de Mesure</h4>
+						</div>
+						<p class="description">Des mesures précises dépendent d'outils adaptés, tels que les règles, les mètres rubans ou les télémètres laser. La précision garantit des conversions exactes.</p>
+					</div>
+
+					<div class="gridDiv" id="origines">
+						<div class="gridAbout">
+							<img src="assets/smiley.svg" alt="smiley" class="gridImg" />
+							<h4 class="subGridTitle">Origines Historiques des Unités de Longueur</h4>
+						</div>
+						<p class="description">Des unités telles que les pieds et les pouces trouvent leur origine dans des parties du corps humain, tandis que le système métrique a été conçu pour la cohérence et la simplicité.</p>
+					</div>
+
+					<div class="gridDiv" id="astuces">
+						<div class="gridAbout">
+							<img src="assets/ampoule.svg" alt="ampoule" class="gridImg" />
+							<h4 class="subGridTitle">Astuces et Conseils pour les Conversions</h4>
+						</div>
+						<p class="description">Pour des conversions mentales rapides, souvenez-vous de ratios simples : 1 m = 100 cm, 1 pouce ≈ 2,54 cm, etc. La pratique améliore la précision. Le tableau ci-dessous vous aidera.</p>
+					</div>
+				</section>
+				<!-- section tableau TODO -->
+				<section class="tableauSection">
+					<div class="tableauDescription">
+						<h2 class="titleTableau subTitle">Tableau</h2>
+						<p class="description">Rappel des conversions de base</p>
+						<table>
+							<tr>
+								<th>Valeur d'origine</th>
+								<th>Ratio de conversion</th>
+								<th>Unité convertie</th>
+							</tr>
+							<tr>
+								<td>1 mètre</td>
+								<td>100</td>
+								<td>centimètres</td>
+							</tr>
+							<tr>
+								<td>1 kilomètre</td>
+								<td>1000</td>
+								<td>mètres</td>
+							</tr>
+							<tr>
+								<td>1 pied</td>
+								<td>12</td>
+								<td>pouces</td>
+							</tr>
+							<tr>
+								<td>1 pouce</td>
+								<td>2.54</td>
+								<td>centimètres</td>
+							</tr>
+							<tr>
+								<td>1 mètre</td>
+								<td>39.37</td>
+								<td>pouces</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				<!-- section video TODO -->
+				<section class="videoSection">
+					<div class="videoDescription">
+						<h2 class="subTitle">Vidéo Complémentaire</h2>
+						<p class="description">Voici une vidéo parlant de l'historique des mesures dans le monde.</p>
+					</div>
+
+					<video controls width="600">
+						<source type="video/mp4" src="assets/history.mp4" />
+					</video>
+				</section>
+			</section>
+		</main>
+	</body>
+</html>

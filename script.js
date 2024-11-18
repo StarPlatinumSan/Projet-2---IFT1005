@@ -63,6 +63,11 @@ window.addEventListener("load", () => {
 
 		const result = convert(value, unit, convertUnit);
 
+		if (value === 0) {
+			affichage.textContent = `0 ${unit} = 0 ${convertUnit}`;
+			return;
+		}
+
 		affichage.textContent = `${value} ${unit} = ${result} ${convertUnit}`;
 	});
 });

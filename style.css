@@ -125,16 +125,6 @@ body {
 	text-align: left;
 }
 
-.inputDiv input::-webkit-outer-spin-button,
-.inputDiv input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-}
-
-.inputDiv input[type="number"] {
-	-moz-appearance: textfield;
-}
-
 .inputDiv .labelCenter {
 	text-align: center;
 }
@@ -151,12 +141,6 @@ body {
 	font-weight: 700;
 	color: #3a6d4a;
 	background-color: inherit;
-}
-
-#inputUnit {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 }
 
 .inputDiv select option {

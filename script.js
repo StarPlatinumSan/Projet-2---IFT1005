@@ -37,7 +37,13 @@ window.addEventListener("load", () => {
 			},
 		};
 
-		return Number(value * conversions[fromUnit][toUnit]);
+		if (fromUnit === toUnit) {
+			return value;
+		}
+
+		let total = parseFloat(value * conversions[fromUnit][toUnit]);
+
+		return Math.round(total * 100000) / 100000;
 	};
 
 	form.addEventListener("submit", (event) => {
